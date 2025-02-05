@@ -32,7 +32,7 @@ p {
   padding-right: 8px;
 }
 
-.menu-selection hr {
+.menu-line {
   width: 100%;
   border: 0;
   border-bottom: 2pt dotted black;
