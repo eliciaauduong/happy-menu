@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>happy menu</title>
+  <link rel="icon" type="image/x-icon" href="images/coffee.svg">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- heading -->
+  <div id="intro">
+    <p>elicia's happy menu</p>
+    <img src="images/coffee.svg" alt="coffee cup icon" id="intro-icon">
+    <p>little things to have a good day</p>
+  </div>
+
+  <!-- menu -->
+  <div class="menu-group">
+    <div class="menu-title">
+      <p>appetisers</p>
+      <hr>
+      <img class="expand-icon" src="images/add.svg" alt="plus icon">
+    </div>
+    <div class="menu-details">
+      <p class="subheading">less than 10 minutes</p>
+      <br>
+      <ul class="menu-list" data-list="appetisers"></ul>
+    </div>
+  </div>
+  
+  <div class="menu-group">
+    <div class="menu-title">
+      <p>mains</p>
+      <hr>
+      <img class="expand-icon" src="images/add.svg" alt="plus icon">
+    </div>
+    <div class="menu-details">
+      <p class="subheading">up to 1 hour</p>
+      <br>
+      <ul class="menu-list" data-list="mains"></ul>
+      
+    </div>
+  </div>
+  
+  <div class="menu-group">
+    <div class="menu-title">
+      <p>sides</p>
+      <hr>
+      <img class="expand-icon" src="images/add.svg" alt="plus icon">
+    </div>
+    <div class="menu-details">
+      <p class="subheading">things you can do in the background</p>
+      <br>
+      <ul class="menu-list" data-list="sides"></ul>
+      
+    </div>
+  </div>
+  
+  <div class="menu-group">
+    <div class="menu-title">
+      <p>desserts</p>
+      <hr>
+      <img class="expand-icon" src="images/add.svg" alt="plus icon">
+    </div>
+    <div class="menu-details">
+      <p class="subheading">things to do in moderation</p>
+      <br>
+      <ul class="menu-list" data-list="desserts"></ul>
+    </div>
+  </div>
+  <br>
+  <hr>
+  <br>
+  <!-- my happy menu -->
+  <p>my happy menu</p>
+  <p class="subheading">share your happy menu for the week(end). select your favourite items from my menu!</p>
+  <div class="menu-title">
+    <p>specials</p>
+    <hr>
+  </div>
+  <ul id="finalSelection"></ul>
+  <br>
+
+  <footer>
+    created by elicia with ❤️
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
