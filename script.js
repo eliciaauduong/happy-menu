@@ -24,7 +24,6 @@ function createListItems(listElement, items) {
                 star.style.display = "inline";
             }
             updateFinalSelection();
-            console.log(finalSelectionList);
           });
           
           listElement.appendChild(li);
@@ -36,7 +35,6 @@ function updateFinalSelection() {
   selectedItems.forEach(item => {
     const li = document.createElement("li");
       li.innerHTML = `<img class="my-fav-icon" src="images/star.svg"> <p>${item}</p>`;
-    // li.textContent = item;
       finalSelectionList.appendChild(li);
     });
 }
@@ -46,7 +44,7 @@ document.querySelectorAll(".menu-list").forEach(ul => {
     createListItems(ul, lists[listKey]);
 });
 
-document.querySelectorAll('.menu-title').forEach(column => {
+document.querySelectorAll('.menu-top').forEach(column => {
   column.addEventListener('click', function () {
       let hiddenSection = this.nextElementSibling;
       let icon = this.querySelector('.expand-icon');
